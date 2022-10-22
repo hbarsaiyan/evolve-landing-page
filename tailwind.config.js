@@ -9,6 +9,9 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
+      fontFamily: {
+        'DMSans': ["DM Sans", "sans-serif"]
+      },
       colors: {
         brightRed: 'hsl(12, 88%, 59%)',
         brightRedLight: 'hsl(12, 88%, 69%)',

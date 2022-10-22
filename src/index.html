@@ -4,10 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Bookmark</title>
+		<title>Manage - The Task Master</title>
 		<link rel="stylesheet" href="../dist/styles.css" />
+		<link
+			rel="shortcut icon"
+			href="../images/favicon-32x32.png"
+			type="image/x-icon"
+		/>
 	</head>
-	<body>
+	<body class="font-DMSans">
 		<!-- Navbar -->
 		<nav class="container relative mx-auto p-6">
 			<div class="flex items-center justify-between">
@@ -16,7 +21,7 @@
 					<img src="../images/logo.svg" alt="Logo" />
 				</div>
 				<!-- Menu -->
-				<div class="hidden space-x-6 md:flex">
+				<div class="hidden space-x-6 text-sm md:flex md:text-base">
 					<a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
 					<a href="#" class="hover:text-darkGrayishBlue">Product</a>
 					<a href="#" class="hover:text-darkGrayishBlue">About Us</a>
@@ -26,16 +31,17 @@
 				<!-- Button -->
 				<a
 					href="#"
-					class="hidden self-baseline rounded-full bg-brightRed px-6 py-2 text-white hover:bg-brightRedLight md:block"
+					class="hidden self-baseline rounded-full bg-brightRed px-6 py-2 text-white shadow-lg shadow-brightRedLight hover:bg-brightRedLight md:block"
 					>Get Started</a
 				>
 			</div>
 		</nav>
+
 		<!-- Hero Section -->
 		<section id="hero">
 			<!-- Flex Container -->
 			<div
-				class="container mx-auto mt-10 flex flex-col-reverse items-center justify-between space-y-0 px-4 md:px-12 lg:px-16 md:flex-row"
+				class="container mx-auto mt-10 flex flex-col-reverse items-center justify-between space-y-0 px-4 md:flex-row md:px-12 lg:px-16"
 			>
 				<!-- Text -->
 				<div class="flex flex-col space-y-8">
@@ -54,7 +60,7 @@
 					<div class="flex justify-center self-stretch md:justify-start">
 						<a
 							href="#"
-							class="self-baseline rounded-full bg-brightRed px-6 py-2 text-white hover:bg-brightRedLight"
+							class="self-baseline rounded-full bg-brightRed px-6 py-2 text-white shadow-lg shadow-brightRedLight hover:bg-brightRedLight"
 							>Get Started</a
 						>
 					</div>
@@ -65,16 +71,17 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- Features Section -->
 		<section id="features">
 			<!-- Flex Container -->
 			<div
-				class="container mx-auto mt-32 flex flex-col space-y-12 md:px-12 lg:px-16 md:flex-row md:space-y-0"
+				class="container mx-auto mt-32 flex flex-col space-y-12 md:flex-row md:space-y-0 md:px-12 lg:px-16"
 			>
 				<!-- What's Differnet -->
-				<div class="flex flex-col space-y-6 md:w-1/2 px-6 md:px-0">
+				<div class="flex flex-col space-y-6 px-6 md:w-1/2 md:px-0">
 					<h2
-						class="max-w-md text-center text-4xl font-bold text-darkBlue md:text-left"
+						class="max-w-md text-center text-3xl font-bold text-darkBlue md:text-left md:text-4xl lg:text-5xl"
 					>
 						What's different about Manage?
 					</h2>
@@ -86,8 +93,9 @@
 						teams.
 					</p>
 				</div>
+
 				<!-- List Item -->
-				<div class="flex flex-col space-y-10 md:w-1/2 pl-4 md:pl-0">
+				<div class="flex flex-col space-y-10 pl-4 md:w-1/2 md:pl-0">
 					<!-- List Item 1 -->
 					<div
 						class="flex flex-col space-y-3 md:flex-row md:justify-center md:space-y-0 md:space-x-6"
@@ -100,9 +108,7 @@
 								>
 									01
 								</div>
-								<h3
-									class="items-center font-semibold text-darkBlue md:hidden"
-								>
+								<h3 class="items-center font-semibold text-darkBlue md:hidden">
 									Track company-wide progress
 								</h3>
 							</div>
@@ -113,7 +119,9 @@
 							>
 								Track company-wide progress
 							</h3>
-							<p class="text-justify text-darkGrayishBlue md:max-w-sm pr-6 md:pr-0">
+							<p
+								class="pr-6 text-justify text-darkGrayishBlue md:max-w-sm md:pr-0"
+							>
 								See how your day-to-day tasks fit into the wider vision. Go from
 								tracking progress at the milestone level all the way done to the
 								smallest of details. Never lose sight of the bigger picture
@@ -133,9 +141,7 @@
 								>
 									02
 								</div>
-								<h3
-									class="items-center font-semibold text-darkBlue md:hidden"
-								>
+								<h3 class="items-center font-semibold text-darkBlue md:hidden">
 									Advanced built-in reports
 								</h3>
 							</div>
@@ -146,7 +152,9 @@
 							>
 								Advanced built-in reports
 							</h3>
-							<p class="text-justify text-darkGrayishBlue md:max-w-sm pr-6 md:pr-0">
+							<p
+								class="pr-6 text-justify text-darkGrayishBlue md:max-w-sm md:pr-0"
+							>
 								Set internal delivery estimates and track progress toward
 								company goals. Our customisable dashboard helps you build out
 								the reports you need to keep key stakeholders informed.
@@ -165,9 +173,7 @@
 								>
 									03
 								</div>
-								<h3
-									class="items-center font-semibold text-darkBlue md:hidden"
-								>
+								<h3 class="items-center font-semibold text-darkBlue md:hidden">
 									Everything you need in one place
 								</h3>
 							</div>
@@ -178,7 +184,9 @@
 							>
 								Everything you need in one place
 							</h3>
-							<p class="text-justify text-darkGrayishBlue md:max-w-sm pr-6 md:pr-0">
+							<p
+								class="pr-6 text-justify text-darkGrayishBlue md:max-w-sm md:pr-0"
+							>
 								Stop jumping from one service to another to communicate, store
 								files, track tasks and share documents. Manage offers an
 								all-in-one team productivity solution.
@@ -186,6 +194,81 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+
+		<!-- Testimonials -->
+		<section id="testimonials">
+			<div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+				<!-- Heading -->
+				<h2 class="text-3xl font-bold text-center md:text-4xl lg:text-5xl text-darkBlue">
+					What they've said
+				</h2>
+			</div>
+			<section class="container py-8 px-6  md:px-12 lg:px-16 mx-auto">
+				<div class="grid mb-8 rounded-lg border border-gray-200 shadow-sm md:mb-12 md:grid-cols-2">
+					<figure class="flex flex-col justify-center items-center p-8 text-center bg-veryLightGray rounded-t-lg border-b border-gray-200 md:rounded-t-none md:rounded-tl-lg md:border-r">
+						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 lg:mb-8">
+							<p class="my-4 font-light">"Manage has supercharged our team's workflow. The
+								ability to maintain visibility on larger milestones at all times
+								keeps everyone motivated."</p>
+						</blockquote>
+						<figcaption class="flex justify-center items-center space-x-3">
+							<img class="w-9 h-9 rounded-full" src="../images/avatar-anisha.png" alt="profile picture">
+							<div class="space-y-0.5 font-medium text-left">
+								<div>Anisha Li</div>
+							</div>
+						</figcaption>    
+					</figure>
+					<figure class="flex flex-col justify-center items-center p-8 text-center bg-veryLightGray rounded-tr-lg border-b border-gray-200">
+						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 lg:mb-8 ">
+							<p class="my-4 font-light">"We have been able to cancel so many other subscriptions
+								since using Manage. There is no more cross-channel
+								confusion and everyone is much more focused."</p>
+						</blockquote>
+						<figcaption class="flex justify-center items-center space-x-3">
+							<img class="w-9 h-9 rounded-full" src="../images/avatar-ali.png" alt="profile picture">
+							<div class="space-y-0.5 font-medium text-left">
+								<div>Ali Bravo</div>
+							</div>
+						</figcaption>    
+					</figure>
+					<figure class="flex flex-col justify-center items-center p-8 text-center bg-veryLightGray rounded-bl-lg border-b border-gray-200 md:border-b-0 md:border-r">
+						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 lg:mb-8">
+							<p class="my-4 font-light">"Manage allows us to provide structure and process. It
+								keeps us organized and focused. I can't stop recommending
+								them to everyone I talk to!"</p>
+						</blockquote>
+						<figcaption class="flex justify-center items-center space-x-3">
+							<img class="w-9 h-9 rounded-full" src="../images/avatar-richard.png" alt="profile picture">
+							<div class="space-y-0.5 font-medium text-left">
+								<div>Richard Watts</div>
+							</div>
+						</figcaption>    
+					</figure>
+					<figure class="flex flex-col justify-center items-center p-8 text-center bg-veryLightGray rounded-b-lg border-gray-200 md:rounded-br-lg">
+						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 lg:mb-8">
+							<p class="my-4 font-light">"Their software allows us to track, manage and collaborate
+								on our projects from anywhere. It keeps the whole team in-
+								sync without being intrusive."</p>
+						</blockquote>
+						<figcaption class="flex justify-center items-center space-x-3">
+							<img class="w-9 h-9 rounded-full" src="../images/avatar-shanai.png	" alt="profile picture">
+							<div class="space-y-0.5 font-medium text-left">
+								<div>Shanai Gough</div>
+							</div>
+						</figcaption>    
+					</figure>
+				</div>
+			</section>
+			<!-- Button -->
+			<div class="flex mx-auto justify-center self-stretch mb-16">
+				<a
+					href="#"
+					class="self-baseline rounded-full bg-brightRed px-6 py-2 text-white shadow-lg shadow-brightRedLight hover:bg-brightRedLight"
+					>Get Started</a
+				>
 			</div>
 		</section>
 	</body>
