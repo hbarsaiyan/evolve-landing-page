@@ -10,12 +10,12 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'DMSans': ["DM Sans", "sans-serif"]
+        'DMSans': ["DM Sans", "sans-serif"],
       },
       colors: {
-        brightRed: 'hsl(12, 88%, 59%)',
-        brightRedLight: 'hsl(12, 88%, 69%)',
-        brightRedSupLight: 'hsl(12, 88%, 95%)',
+        Blue: '#335dff',
+        BlueLight: '#5077ff',
+        BlueSupLight: '#d4deff',
         darkBlue: 'hsl(228, 39%, 23%)',
         darkGrayishBlue: 'hsl(227, 12%, 61%)',
         veryDarkBlue: 'hsl(233, 12%, 13%)',
