@@ -11,7 +11,7 @@
 			href="./assets/favicon-32x32.webp"
 			type="image/x-icon"
 		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
 	</head>
 	<body class="bg-white font-DMSans dark:bg-black">
 		<!-- Navbar -->
@@ -104,7 +104,7 @@
 					<button
 						type="button"
 						id="menu-btn"
-						class="open block focus:outline-none md:hidden fill-NavyBlue dark:fill-white"
+						class="open block fill-NavyBlue focus:outline-none dark:fill-white md:hidden"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@
 			<!-- Mobile Menu -->
 			<div
 				id="menu"
-				class="absolute right-6 left-6 mt-8 hidden w-auto flex-col items-center gap-y-6 rounded-md border border-gray-300 dark:border-gray-800 bg-white py-8 font-bold shadow-2xl dark:bg-black dark:text-white md:hidden"
+				class="absolute right-6 left-6 mt-8 hidden w-auto flex-col items-center gap-y-6 rounded-md border border-gray-300 bg-white py-8 font-bold shadow-2xl dark:border-gray-800 dark:bg-black dark:text-white md:hidden"
 			>
 				<a href="#" class="hover:text-gray-500 dark:text-gray-300">Pricing</a>
 				<a href="#" class="hover:text-gray-500 dark:text-gray-300">Product</a>
@@ -196,14 +196,18 @@
 					<div class="flex justify-center self-stretch md:justify-start">
 						<a
 							href="#"
-							class="self-baseline dark:shadow-none rounded-full bg-Blue px-6 py-2 text-white shadow-md shadow-BlueLight hover:bg-BlueLight"
+							class="self-baseline rounded-full bg-Blue px-6 py-2 text-white shadow-md shadow-BlueLight hover:bg-BlueLight dark:shadow-none"
 							>Get Started</a
 						>
 					</div>
 				</div>
 				<!-- Image -->
 				<div class="md:max-w-[50%]">
-					<img src="./assets/illustration.svg" alt="hero-image" />
+					<img
+						src="./assets/illustration.svg"
+						alt="hero-image"
+						class="h-auto w-full"
+					/>
 				</div>
 			</div>
 		</section>
@@ -338,13 +342,13 @@
 				</h2>
 			</div>
 			<section class="container mx-auto px-6 pt-8 pb-16 md:px-12 lg:px-16">
-				<div
-					class="grid rounded-lg shadow-sm md:grid-cols-2"
-				>
+				<div class="grid rounded-lg shadow-sm md:grid-cols-2">
 					<figure
-						class="flex flex-col items-center justify-center rounded-tl-lg  outline-double outline-2 outline-gray-200 bg-white p-8 text-center dark:outline-gray-800 dark:bg-black"
+						class="flex flex-col items-center justify-center rounded-tl-lg bg-white p-8 text-center outline-double outline-2 outline-gray-200 dark:bg-black dark:outline-gray-800"
 					>
-						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8">
+						<blockquote
+							class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8"
+						>
 							<p class="my-4 font-light">
 								"Evolve has supercharged our team's workflow. The ability to
 								maintain visibility on larger milestones at all times keeps
@@ -363,9 +367,11 @@
 						</figcaption>
 					</figure>
 					<figure
-						class="flex flex-col items-center justify-center rounded-tr-lg  outline-double outline-2 outline-gray-200 bg-white p-8 text-center dark:outline-gray-800 dark:bg-black"
+						class="flex flex-col items-center justify-center rounded-tr-lg bg-white p-8 text-center outline-double outline-2 outline-gray-200 dark:bg-black dark:outline-gray-800"
 					>
-						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8">
+						<blockquote
+							class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8"
+						>
 							<p class="my-4 font-light">
 								"We have been able to cancel so many other subscriptions since
 								using Evolve. There is no more cross-channel confusion and
@@ -384,9 +390,11 @@
 						</figcaption>
 					</figure>
 					<figure
-						class="flex flex-col items-center justify-center rounded-bl-lg  outline-double outline-2 outline-gray-200 bg-white p-8 text-center dark:outline-gray-800 dark:bg-black"
+						class="flex flex-col items-center justify-center rounded-bl-lg bg-white p-8 text-center outline-double outline-2 outline-gray-200 dark:bg-black dark:outline-gray-800"
 					>
-						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8">
+						<blockquote
+							class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8"
+						>
 							<p class="my-4 font-light">
 								"Evolve allows us to provide structure and process. It keeps us
 								organized and focused. I can't stop recommending them to
@@ -405,9 +413,11 @@
 						</figcaption>
 					</figure>
 					<figure
-						class="flex flex-col items-center justify-center rounded-br-lg  outline-double outline-2 outline-gray-200 bg-white p-8 text-center dark:outline-gray-800 dark:bg-black"
+						class="flex flex-col items-center justify-center rounded-br-lg bg-white p-8 text-center outline-double outline-2 outline-gray-200 dark:bg-black dark:outline-gray-800"
 					>
-						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8">
+						<blockquote
+							class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8"
+						>
 							<p class="my-4 font-light">
 								"Their software allows us to track, manage and collaborate on
 								our projects from anywhere. It keeps the whole team in- sync
@@ -431,7 +441,7 @@
 			<div class="mx-auto mb-16 flex justify-center self-stretch">
 				<a
 					href="#"
-					class="self-baseline rounded-full dark:shadow-none bg-Blue px-6 py-2 text-white shadow-md shadow-BlueLight hover:bg-BlueLight"
+					class="self-baseline rounded-full bg-Blue px-6 py-2 text-white shadow-md shadow-BlueLight hover:bg-BlueLight dark:shadow-none"
 					>Get Started</a
 				>
 			</div>
@@ -516,23 +526,43 @@
 					<div class="flex flex-row justify-evenly gap-x-4">
 						<!-- Facebook -->
 						<a href="https://www.facebook.com">
-							<img src="./assets/icon-facebook.svg" alt="facebook" />
+							<img
+								src="./assets/icon-facebook.svg"
+								alt="facebook"
+								class="h-auto w-full"
+							/>
 						</a>
 						<!-- Youtube -->
 						<a href="https://www.youtube.com">
-							<img src="./assets/icon-youtube.svg" alt="youtube" />
+							<img
+								src="./assets/icon-youtube.svg"
+								alt="youtube"
+								class="h-auto w-full"
+							/>
 						</a>
 						<!-- Twitter -->
 						<a href="https://www.twitter.com">
-							<img src="./assets/icon-twitter.svg" alt="twitter" />
+							<img
+								src="./assets/icon-twitter.svg"
+								alt="twitter"
+								class="h-auto w-full"
+							/>
 						</a>
 						<!-- Pinterest -->
 						<a href="https://www.pinterest.com">
-							<img src="./assets/icon-pinterest.svg" alt="pinterest" />
+							<img
+								src="./assets/icon-pinterest.svg"
+								alt="pinterest"
+								class="h-auto w-full"
+							/>
 						</a>
 						<!-- Instagram -->
 						<a href="https://www.Instagram.com">
-							<img src="./assets/icon-instagram.svg" alt="Instagram" />
+							<img
+								src="./assets/icon-instagram.svg"
+								alt="Instagram"
+								class="h-auto w-full"
+							/>
 						</a>
 					</div>
 				</div>

@@ -587,10 +587,6 @@ video {
   }
 }
 
-.visible{
-  visibility: visible;
-}
-
 .absolute{
   position: absolute;
 }
@@ -661,6 +657,10 @@ video {
   height: 2rem;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .h-9{
   height: 2.25rem;
 }
@@ -671,6 +671,10 @@ video {
 
 .w-auto{
   width: auto;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .w-9{
