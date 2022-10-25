@@ -4,18 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#cta {
-
-    background-image: url('../dist/assets/bg-simplify-section-desktop.svg');
-    background-repeat: no-repeat;
-}
-
-@media (max-width: 576px) {
-    #cta {
-        background-image: url('../dist/assets/bg-simplify-section-mobile.svg');
-    }
-}
-
 #menu,
 #ham,
 #cross {
