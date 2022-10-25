@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --watch",
-    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css"
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
   },
   "devDependencies": {
     "prettier": "^2.7.1",

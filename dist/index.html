@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Evolve - The Task Master</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/favicon-32x32.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body class="bg-white font-DMSans dark:bg-black">
+		<!-- Navbar -->
+		<nav class="container relative mx-auto p-6">
+			<div class="flex items-center justify-between">
+				<!-- Logo -->
+				<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					style="isolation: isolate"
+					viewBox="0 0 102 20"
+					width="102pt"
+					height="20pt"
+				>
+					<path
+						d=" M 11.007 10 C 10.359 10 9.711 9.885 9.206 9.655 L 2.086 6.41 C 1.759 6.262 1 5.829 1 5.011 C 1 4.194 1.759 3.761 2.086 3.611 L 9.268 0.339 C 10.258 -0.113 11.751 -0.113 12.742 0.339 L 19.929 3.611 C 20.255 3.76 21.014 4.194 21.014 5.011 C 21.014 5.83 20.255 6.261 19.929 6.411 L 12.807 9.655 C 12.303 9.885 11.655 10 11.007 10 Z "
+						fill="rgb(80,119,255)"
+					/>
+					<path
+						d=" M 19.911 8.596 L 19.186 8.269 L 17.322 9.122 L 12.803 11.19 C 12.298 11.42 11.649 11.535 11.002 11.535 C 10.356 11.535 9.709 11.42 9.204 11.19 L 4.681 9.122 L 2.816 8.269 L 2.085 8.597 C 1.759 8.746 1 9.182 1 10 C 1 10.817 1.759 11.254 2.085 11.402 L 9.2 14.654 C 9.702 14.885 10.35 15 11 15 C 11.65 15 12.295 14.885 12.8 14.654 L 19.909 11.404 C 20.236 11.255 21 10.821 21 10 C 21 9.179 20.241 8.746 19.911 8.596 Z "
+						fill="rgb(80,119,255)"
+					/>
+					<path
+						d=" M 19.911 13.596 L 19.186 13.269 L 17.322 14.121 L 12.803 16.186 C 12.298 16.416 11.649 16.531 11.002 16.531 C 10.356 16.531 9.709 16.416 9.204 16.186 L 4.681 14.119 L 2.816 13.269 L 2.085 13.597 C 1.759 13.746 1 14.182 1 15 C 1 15.817 1.759 16.254 2.085 16.401 L 9.2 19.651 C 9.702 19.881 10.352 20 11 20 C 11.647 20 12.293 19.881 12.797 19.65 L 19.909 16.402 C 20.236 16.254 21 15.82 21 15 C 21 14.18 20.241 13.746 19.911 13.596 L 19.911 13.596 Z "
+						fill="rgb(80,119,255)"
+					/>
+					<g clip-path="url(#_clipPath_mYAUnrZ2kvCRHnjlwqqxYjIpSzGZj3cN)">
+						<text
+							class="fill-NavyBlue dark:fill-white"
+							transform="matrix(1,0,0,1,24.182,18.889)"
+							style="
+								font-family: 'Oxygen';
+								font-weight: 700;
+								font-size: 24.5px;
+								font-style: normal;
+								stroke: none;
+							"
+						>
+							evolve
+						</text>
+					</g>
+					<defs>
+						<clipPath id="_clipPath_mYAUnrZ2kvCRHnjlwqqxYjIpSzGZj3cN">
+							<rect
+								x="0"
+								y="0"
+								width="78.818"
+								height="26.269"
+								transform="matrix(1,0,0,1,24.182,-6.269)"
+							/>
+						</clipPath>
+					</defs>
+				</svg>
+				<!-- Menu -->
+				<div class="hidden space-x-6 md:flex">
+					<a
+						href="#"
+						class="text-NavyBlue hover:text-gray-500 dark:text-gray-100"
+						>Pricing</a
+					>
+					<a
+						href="#"
+						class="text-NavyBlue hover:text-gray-500 dark:text-gray-100"
+						>Product</a
+					>
+					<a
+						href="#"
+						class="text-NavyBlue hover:text-gray-500 dark:text-gray-100"
+						>About Us</a
+					>
+					<a
+						href="#"
+						class="text-NavyBlue hover:text-gray-500 dark:text-gray-100"
+						>Careers</a
+					>
+					<a
+						href="#"
+						class="text-NavyBlue hover:text-gray-500 dark:text-gray-100"
+						>Community</a
+					>
+				</div>
+				<div class="flex items-center justify-evenly gap-x-4">
+					<!-- Button -->
+					<a
+						href="#"
+						class="hidden self-baseline rounded-full bg-Blue px-6 py-2 text-white shadow-md shadow-BlueLight hover:bg-BlueLight dark:shadow-none lg:block"
+						>Get Started</a
+					>
+					<!-- Hamburger -->
+					<button
+						type="button"
+						id="menu-btn"
+						class="open block focus:outline-none md:hidden fill-NavyBlue dark:fill-white"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							id="ham"
+							class="h-8 w-8"
+						>
+							<path
+								fillRule="evenodd"
+								d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+								clipRule="evenodd"
+							/>
+						</svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							id="cross"
+							class="hidden h-8 w-8 fill-NavyBlue dark:fill-white"
+						>
+							<path
+								fillRule="evenodd"
+								d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+								clipRule="evenodd"
+							/>
+						</svg>
+					</button>
+					<!-- Theme Switcher -->
+					<button id="theme-toggle" type="button">
+						<svg
+							id="theme-toggle-dark-icon"
+							class="hidden h-8 w-8"
+							fill="#1d1e25"
+							viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+							></path>
+						</svg>
+						<svg
+							id="theme-toggle-light-icon"
+							class="hidden h-8 w-8"
+							fill="#ffffff"
+							viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+							></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<!-- Mobile Menu -->
+			<div
+				id="menu"
+				class="absolute right-6 left-6 mt-8 hidden w-auto flex-col items-center gap-y-6 rounded-md border border-gray-300 dark:border-gray-800 bg-white py-8 font-bold shadow-2xl dark:bg-black dark:text-white md:hidden"
+			>
+				<a href="#" class="hover:text-gray-500 dark:text-gray-300">Pricing</a>
+				<a href="#" class="hover:text-gray-500 dark:text-gray-300">Product</a>
+				<a href="#" class="hover:text-gray-500 dark:text-gray-300">About Us</a>
+				<a href="#" class="hover:text-gray-500 dark:text-gray-300">Careers</a>
+				<a href="#" class="hover:text-gray-500 dark:text-gray-300">Community</a>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section id="hero">
+			<!-- Flex Container -->
+			<div
+				class="container mx-auto mt-10 flex flex-col-reverse items-center justify-between gap-y-6 px-4 md:flex-row md:px-12 lg:px-16"
+			>
+				<!-- Text -->
+				<div class="flex flex-col space-y-10">
+					<h1
+						class="max-w-lg text-center text-4xl font-bold text-darkBlue dark:text-white md:text-left lg:text-6xl"
+					>
+						Bring everyone together to build better products
+					</h1>
+					<p
+						class="mx-auto max-w-sm text-center text-lg text-gray-500 dark:text-gray-400 md:mx-0 md:text-left"
+					>
+						Evolve makes it simple for software teams to plan day-to-day tasks
+						while keeping the larger team goals in view.
+					</p>
+					<!-- Button -->
+					<div class="flex justify-center self-stretch md:justify-start">
+						<a
+							href="#"
+							class="self-baseline dark:shadow-none rounded-full bg-Blue px-6 py-2 text-white shadow-md shadow-BlueLight hover:bg-BlueLight"
+							>Get Started</a
+						>
+					</div>
+				</div>
+				<!-- Image -->
+				<div class="md:max-w-[50%]">
+					<img src="./assets/illustration.svg" alt="hero-image" />
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section id="features">
+			<!-- Flex Container -->
+			<div
+				class="container mx-auto mt-32 flex flex-col space-y-12 md:flex-row md:space-y-0 md:px-12 lg:px-16"
+			>
+				<!-- What's Differnet -->
+				<div class="flex flex-col space-y-6 px-6 md:w-1/2 md:px-0">
+					<h2
+						class="max-w-md text-center text-3xl font-bold text-darkBlue dark:text-white md:text-left md:text-4xl lg:text-5xl"
+					>
+						What's different about Evolve?
+					</h2>
+					<p
+						class="mx-auto max-w-xs text-center text-gray-500 dark:text-gray-400 md:mx-0 md:text-left"
+					>
+						Evolve provides all the functionality your team needs, without the
+						complexity. Our software is tailor-made for modern digital product
+						teams.
+					</p>
+				</div>
+
+				<!-- List Item -->
+				<div class="flex flex-col space-y-10 pl-4 md:w-1/2 md:pl-0">
+					<!-- List Item 1 -->
+					<div
+						class="flex flex-col space-y-3 md:flex-row md:justify-center md:space-y-0 md:space-x-6"
+					>
+						<!-- Heading -->
+						<div class="rounded-l-full bg-BlueSupLight md:bg-transparent">
+							<div class="flex items-center space-x-2">
+								<div class="rounded-full bg-Blue px-4 py-2 text-white md:py-1">
+									01
+								</div>
+								<h3 class="items-center font-semibold text-darkBlue md:hidden">
+									Track company-wide progress
+								</h3>
+							</div>
+						</div>
+						<div class="block">
+							<h3
+								class="mb-4 hidden text-lg font-semibold text-darkBlue dark:text-white md:block"
+							>
+								Track company-wide progress
+							</h3>
+							<p
+								class="pr-6 text-justify text-gray-500 dark:text-gray-400 md:max-w-sm md:pr-0"
+							>
+								See how your day-to-day tasks fit into the wider vision. Go from
+								tracking progress at the milestone level all the way done to the
+								smallest of details. Never lose sight of the bigger picture
+								again.
+							</p>
+						</div>
+					</div>
+					<!-- List Item 2 -->
+					<div
+						class="flex flex-col space-y-3 md:flex-row md:justify-center md:space-y-0 md:space-x-6"
+					>
+						<!-- Heading -->
+						<div class="rounded-l-full bg-BlueSupLight md:bg-transparent">
+							<div class="flex items-center space-x-2">
+								<div class="rounded-full bg-Blue px-4 py-2 text-white md:py-1">
+									02
+								</div>
+								<h3 class="items-center font-semibold text-darkBlue md:hidden">
+									Advanced built-in reports
+								</h3>
+							</div>
+						</div>
+						<div class="block">
+							<h3
+								class="mb-4 hidden text-lg font-semibold text-darkBlue dark:text-white md:block"
+							>
+								Advanced built-in reports
+							</h3>
+							<p
+								class="pr-6 text-justify text-gray-500 dark:text-gray-400 md:max-w-sm md:pr-0"
+							>
+								Set internal delivery estimates and track progress toward
+								company goals. Our customisable dashboard helps you build out
+								the reports you need to keep key stakeholders informed.
+							</p>
+						</div>
+					</div>
+					<!-- List Item 3 -->
+					<div
+						class="flex flex-col space-y-3 md:flex-row md:justify-center md:space-y-0 md:space-x-6"
+					>
+						<!-- Heading -->
+						<div class="rounded-l-full bg-BlueSupLight md:bg-transparent">
+							<div class="flex items-center space-x-2">
+								<div class="rounded-full bg-Blue px-4 py-2 text-white md:py-1">
+									03
+								</div>
+								<h3 class="items-center font-semibold text-darkBlue md:hidden">
+									Everything you need in one place
+								</h3>
+							</div>
+						</div>
+						<div class="block">
+							<h3
+								class="mb-4 hidden text-lg font-semibold text-darkBlue dark:text-white md:block"
+							>
+								Everything you need in one place
+							</h3>
+							<p
+								class="pr-6 text-justify text-gray-500 dark:text-gray-400 md:max-w-sm md:pr-0"
+							>
+								Stop jumping from one service to another to communicate, store
+								files, track tasks and share documents. Evolve offers an
+								all-in-one team productivity solution.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonials -->
+		<section id="testimonials">
+			<div class="mx-auto mt-32 max-w-6xl px-5 text-center">
+				<!-- Heading -->
+				<h2
+					class="text-center text-3xl font-bold text-darkBlue dark:text-white md:text-4xl lg:text-5xl"
+				>
+					What they've said
+				</h2>
+			</div>
+			<section class="container mx-auto px-6 pt-8 pb-16 md:px-12 lg:px-16">
+				<div
+					class="grid rounded-lg shadow-sm md:grid-cols-2"
+				>
+					<figure
+						class="flex flex-col items-center justify-center rounded-tl-lg  outline-double outline-2 outline-gray-200 bg-white p-8 text-center dark:outline-gray-800 dark:bg-black"
+					>
+						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8">
+							<p class="my-4 font-light">
+								"Evolve has supercharged our team's workflow. The ability to
+								maintain visibility on larger milestones at all times keeps
+								everyone motivated."
+							</p>
+						</blockquote>
+						<figcaption class="flex items-center justify-center space-x-3">
+							<img
+								class="h-9 w-9 rounded-full"
+								src="./assets/avatar-anisha.png"
+								alt="profile picture"
+							/>
+							<div class="space-y-0.5 text-left font-medium dark:text-white">
+								<div>Anisha Li</div>
+							</div>
+						</figcaption>
+					</figure>
+					<figure
+						class="flex flex-col items-center justify-center rounded-tr-lg  outline-double outline-2 outline-gray-200 bg-white p-8 text-center dark:outline-gray-800 dark:bg-black"
+					>
+						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8">
+							<p class="my-4 font-light">
+								"We have been able to cancel so many other subscriptions since
+								using Evolve. There is no more cross-channel confusion and
+								everyone is much more focused."
+							</p>
+						</blockquote>
+						<figcaption class="flex items-center justify-center space-x-3">
+							<img
+								class="h-9 w-9 rounded-full"
+								src="./assets/avatar-ali.png"
+								alt="profile picture"
+							/>
+							<div class="space-y-0.5 text-left font-medium dark:text-white">
+								<div>Ali Bravo</div>
+							</div>
+						</figcaption>
+					</figure>
+					<figure
+						class="flex flex-col items-center justify-center rounded-bl-lg  outline-double outline-2 outline-gray-200 bg-white p-8 text-center dark:outline-gray-800 dark:bg-black"
+					>
+						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8">
+							<p class="my-4 font-light">
+								"Evolve allows us to provide structure and process. It keeps us
+								organized and focused. I can't stop recommending them to
+								everyone I talk to!"
+							</p>
+						</blockquote>
+						<figcaption class="flex items-center justify-center space-x-3">
+							<img
+								class="h-9 w-9 rounded-full"
+								src="./assets/avatar-richard.png"
+								alt="profile picture"
+							/>
+							<div class="space-y-0.5 text-left font-medium dark:text-white">
+								<div>Richard Watts</div>
+							</div>
+						</figcaption>
+					</figure>
+					<figure
+						class="flex flex-col items-center justify-center rounded-br-lg  outline-double outline-2 outline-gray-200 bg-white p-8 text-center dark:outline-gray-800 dark:bg-black"
+					>
+						<blockquote class="mx-auto mb-4 max-w-lg text-gray-500 dark:text-gray-400 lg:mb-8">
+							<p class="my-4 font-light">
+								"Their software allows us to track, manage and collaborate on
+								our projects from anywhere. It keeps the whole team in- sync
+								without being intrusive."
+							</p>
+						</blockquote>
+						<figcaption class="flex items-center justify-center space-x-3">
+							<img
+								class="h-9 w-9 rounded-full"
+								src="./assets/avatar-shanai.png	"
+								alt="profile picture"
+							/>
+							<div class="space-y-0.5 text-left font-medium dark:text-white">
+								<div>Shanai Gough</div>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+			<!-- Button -->
+			<div class="mx-auto mb-16 flex justify-center self-stretch">
+				<a
+					href="#"
+					class="self-baseline rounded-full dark:shadow-none bg-Blue px-6 py-2 text-white shadow-md shadow-BlueLight hover:bg-BlueLight"
+					>Get Started</a
+				>
+			</div>
+		</section>
+		<section id="cta" class="bg-Blue">
+			<div
+				class="container mx-auto flex flex-col items-center justify-between space-y-12 px-6 py-24 md:flex-row md:space-y-0 md:py-12"
+			>
+				<h2
+					class="text-center text-4xl font-bold leading-tight text-white md:max-w-lg md:text-left"
+				>
+					Simplify how your team works today.
+				</h2>
+				<div class="mx-auto items-center justify-center md:mx-0">
+					<a
+						href="#"
+						class="self-baseline rounded-full bg-white px-6 py-2 font-bold text-Blue shadow-md hover:bg-neutral-100"
+						>Get Started</a
+					>
+				</div>
+			</div>
+		</section>
+		<section id="footer" class="bg-veryDarkBlue">
+			<div
+				class="mx-auto flex flex-col-reverse items-center justify-evenly gap-y-8 px-6 py-10 md:flex-row md:gap-x-6 md:space-y-0 md:py-12"
+			>
+				<!-- Item 1 -->
+				<div
+					class="flex min-w-fit flex-col-reverse justify-between gap-y-8 md:flex-col"
+				>
+					<!-- Logo -->
+					<div class="mx-auto">
+						<!-- Logo -->
+						<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							style="isolation: isolate"
+							viewBox="0 0 102 20"
+							width="102pt"
+							height="20pt"
+						>
+							<path
+								d=" M 11.007 10 C 10.359 10 9.711 9.885 9.206 9.655 L 2.086 6.41 C 1.759 6.262 1 5.829 1 5.011 C 1 4.194 1.759 3.761 2.086 3.611 L 9.268 0.339 C 10.258 -0.113 11.751 -0.113 12.742 0.339 L 19.929 3.611 C 20.255 3.76 21.014 4.194 21.014 5.011 C 21.014 5.83 20.255 6.261 19.929 6.411 L 12.807 9.655 C 12.303 9.885 11.655 10 11.007 10 Z "
+								fill="rgb(80,119,255)"
+							/>
+							<path
+								d=" M 19.911 8.596 L 19.186 8.269 L 17.322 9.122 L 12.803 11.19 C 12.298 11.42 11.649 11.535 11.002 11.535 C 10.356 11.535 9.709 11.42 9.204 11.19 L 4.681 9.122 L 2.816 8.269 L 2.085 8.597 C 1.759 8.746 1 9.182 1 10 C 1 10.817 1.759 11.254 2.085 11.402 L 9.2 14.654 C 9.702 14.885 10.35 15 11 15 C 11.65 15 12.295 14.885 12.8 14.654 L 19.909 11.404 C 20.236 11.255 21 10.821 21 10 C 21 9.179 20.241 8.746 19.911 8.596 Z "
+								fill="rgb(80,119,255)"
+							/>
+							<path
+								d=" M 19.911 13.596 L 19.186 13.269 L 17.322 14.121 L 12.803 16.186 C 12.298 16.416 11.649 16.531 11.002 16.531 C 10.356 16.531 9.709 16.416 9.204 16.186 L 4.681 14.119 L 2.816 13.269 L 2.085 13.597 C 1.759 13.746 1 14.182 1 15 C 1 15.817 1.759 16.254 2.085 16.401 L 9.2 19.651 C 9.702 19.881 10.352 20 11 20 C 11.647 20 12.293 19.881 12.797 19.65 L 19.909 16.402 C 20.236 16.254 21 15.82 21 15 C 21 14.18 20.241 13.746 19.911 13.596 L 19.911 13.596 Z "
+								fill="rgb(80,119,255)"
+							/>
+							<g clip-path="url(#_clipPath_mYAUnrZ2kvCRHnjlwqqxYjIpSzGZj3cN)">
+								<text
+									transform="matrix(1,0,0,1,24.182,18.889)"
+									style="
+										font-family: 'Oxygen';
+										font-weight: 700;
+										font-size: 24.5px;
+										font-style: normal;
+										fill: #ffffff;
+										stroke: none;
+									"
+								>
+									evolve
+								</text>
+							</g>
+							<defs>
+								<clipPath id="_clipPath_mYAUnrZ2kvCRHnjlwqqxYjIpSzGZj3cN">
+									<rect
+										x="0"
+										y="0"
+										width="78.818"
+										height="26.269"
+										transform="matrix(1,0,0,1,24.182,-6.269)"
+									/>
+								</clipPath>
+							</defs>
+						</svg>
+					</div>
+					<div class="flex flex-row justify-evenly gap-x-4">
+						<!-- Facebook -->
+						<a href="https://www.facebook.com">
+							<img src="./assets/icon-facebook.svg" alt="facebook" />
+						</a>
+						<!-- Youtube -->
+						<a href="https://www.youtube.com">
+							<img src="./assets/icon-youtube.svg" alt="youtube" />
+						</a>
+						<!-- Twitter -->
+						<a href="https://www.twitter.com">
+							<img src="./assets/icon-twitter.svg" alt="twitter" />
+						</a>
+						<!-- Pinterest -->
+						<a href="https://www.pinterest.com">
+							<img src="./assets/icon-pinterest.svg" alt="pinterest" />
+						</a>
+						<!-- Instagram -->
+						<a href="https://www.Instagram.com">
+							<img src="./assets/icon-instagram.svg" alt="Instagram" />
+						</a>
+					</div>
+				</div>
+				<!-- Item 2 -->
+				<div class="flex flex-row justify-center space-x-16 text-sm text-white">
+					<div class="flex flex-col space-y-4">
+						<a href="#">Home</a>
+						<a href="#">Pricing</a>
+						<a href="#">Products</a>
+						<a href="#">About Us</a>
+					</div>
+					<div class="flex flex-col space-y-4">
+						<a href="#">Careers</a>
+						<a href="#">Community</a>
+						<a href="#">Privacy Policy</a>
+						<a href="#">Contact Us</a>
+					</div>
+				</div>
+				<!-- Item 3 -->
+				<div class="flex flex-row space-x-2 text-sm">
+					<input
+						type="text"
+						class="flex-grow self-baseline rounded-full bg-white px-6 py-2 text-black shadow-md hover:bg-neutral-100"
+						placeholder="Updates in your inbox..."
+					/>
+					<a
+						href="#"
+						class="self-baseline rounded-full bg-Blue px-6 py-2 text-white shadow-md hover:bg-neutral-100"
+						>Go</a
+					>
+				</div>
+			</div>
+		</section>
+		<script src="./script.js"></script>
+	</body>
+</html>

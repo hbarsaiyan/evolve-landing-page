@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oxygen:wght@700&display=swap');
 
 /*
-! tailwindcss v3.2.0 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1073,13 +1073,13 @@ video {
 }
 
 #cta {
-  background-image: url('../images/bg-simplify-section-desktop.svg');
+  background-image: url('../dist/assets/bg-simplify-section-desktop.svg');
   background-repeat: no-repeat;
 }
 
 @media (max-width: 576px) {
   #cta {
-    background-image: url('../images/bg-simplify-section-mobile.svg');
+    background-image: url('../dist/assets/bg-simplify-section-mobile.svg');
   }
 }
 
