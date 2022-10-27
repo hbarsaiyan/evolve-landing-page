@@ -653,16 +653,20 @@ video {
   display: none;
 }
 
+.aspect-\[1\.24\]{
+  aspect-ratio: 1.24;
+}
+
 .h-8{
   height: 2rem;
 }
 
-.h-auto{
-  height: auto;
-}
-
 .h-9{
   height: 2.25rem;
+}
+
+.h-5{
+  height: 1.25rem;
 }
 
 .w-8{
@@ -679,6 +683,10 @@ video {
 
 .w-9{
   width: 2.25rem;
+}
+
+.w-5{
+  width: 1.25rem;
 }
 
 .min-w-fit{
@@ -1185,12 +1193,12 @@ video {
     display: none;
   }
 
-  .md\:w-1\/2{
+  .md\:w-\[50\%\]{
     width: 50%;
   }
 
-  .md\:max-w-\[50\%\]{
-    max-width: 50%;
+  .md\:w-1\/2{
+    width: 50%;
   }
 
   .md\:max-w-sm{
